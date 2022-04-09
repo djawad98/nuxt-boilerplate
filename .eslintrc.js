@@ -15,5 +15,8 @@ module.exports = {
   plugins: [
   ],
   // add your custom rules here
-  rules: {}
+  rules: {
+    quotes: ['off', 'double'],
+    "comma-dangle": ['off', 'never'],
+  }
 }
