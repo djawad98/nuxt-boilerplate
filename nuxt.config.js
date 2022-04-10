@@ -55,6 +55,13 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+
+    loaders: {
+      scss: {
+        additionalData: `@import "./assets/vars.scss";`,
+      },
+    },
+
     postcss: {
       plugins: {
         // tailwindcss: path.join(__dirname, 'tailwind.config.js'),
